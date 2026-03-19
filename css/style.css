@@ -1,0 +1,207 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.logo p {
+    color: #aaaaaa;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #aaaaaa;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background-color: #000000;
+    color: #ffffff;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid #ffffff;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* ===== FEATURED SECTION ===== */
+.featured {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collection-card {
+    border: 1px solid #000000;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.collection-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    background-color: #000000;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.collection-card h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.collection-card p {
+    color: #555555;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.collection-card .btn {
+    display: inline-block;
+}
+
+/* ===== MOTTO SECTION ===== */
+.motto {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.motto h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.motto p {
+    color: #aaaaaa;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #000000;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
